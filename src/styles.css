@@ -47,6 +47,18 @@ nav li {
     border-radius: 50%;
 }
 
+.Arrow {
+    width: 5vh;
+    align-self: flex-end;
+    margin-right: 10px;
+}
+
+.Portfolio-Pointer {
+    display: flex;
+    margin-top: 10vh;
+}
+
+
 .Portfolio {
     background-color: #595F39;
     height: 100dvh;
