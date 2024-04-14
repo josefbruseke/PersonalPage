@@ -43,6 +43,9 @@ nav li {
     text-align: center;
 }
 
+.Profile-photo {
+    border-radius: 50%;
+}
 
 .Portfolio {
     background-color: #595F39;
