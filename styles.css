@@ -1,8 +1,8 @@
 body {
+    padding: 0;
     margin: 0;
     overflow: hidden;
     overflow-y: scroll;
-
 }
 
 
@@ -29,9 +29,20 @@ nav li {
 }
 
 .Home {
+    margin: 0;
+    padding: 0;
     background-color: #C4C5BA;
     height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5dvh;
+    align-items: center;
 }
+
+.Home h2 {
+    text-align: center;
+}
+
 
 .Portfolio {
     background-color: #595F39;
