@@ -1,13 +1,19 @@
 body {
     margin: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+
 }
 
 
 nav {
     background-color: #E4E4DE;
     display: flex;
+    position: fixed;
     justify-content: flex-end;
-    padding: 2dvh;
+    align-items: center;
+    height: 5%;
+    width: 100%;
 }
 
 nav ul {
@@ -21,3 +27,17 @@ nav li {
     display: inline;
     padding: 20px;
 }
+
+.Home {
+    background-color: #C4C5BA;
+    height: 100dvh;
+}
+
+.Portfolio {
+    background-color: #595F39;
+    height: 100dvh;
+}
+
+
+
+
