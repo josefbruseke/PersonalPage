@@ -24,12 +24,20 @@ nav ul {
     text-align: center;
 }
 
-nav li {
+nav a {
+    text-decoration: none;
     display: inline;
-    padding: 20px;
+    padding: 15px;
+    color: #1B1B1B
 }
 
-.home {
+nav a:hover {
+    background-color: #1B1B1B;
+    color: #C4C5BA;
+    border-radius: 8%;
+}
+
+#home {
     margin: 0;
     padding: 0;
     background-color: #C4C5BA;
@@ -40,7 +48,7 @@ nav li {
     align-items: center;
 }
 
-.home h2, h3 {
+#home h2, h3 {
     text-align: center;
 }
 
@@ -60,7 +68,7 @@ nav li {
 }
 
 
-.portfolio {
+#portfolio {
     margin: 0;
     padding: 0;
     background-color: #595F39;
