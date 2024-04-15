@@ -29,42 +29,69 @@ nav li {
     padding: 20px;
 }
 
-.Home {
+.home {
     margin: 0;
     padding: 0;
     background-color: #C4C5BA;
     height: 100dvh;
     display: flex;
     flex-direction: column;
-    padding-top: 5dvh;
+    padding-top: 5vh;
     align-items: center;
 }
 
-.Home h2, h3 {
+.home h2, h3 {
     text-align: center;
 }
 
-.Profile-photo {
+.profile-photo {
     border-radius: 50%;
 }
 
-.Arrow {
+.arrow {
     width: 5vh;
     align-self: flex-end;
     margin-right: 10px;
 }
 
-.Portfolio-Pointer {
+.portfolio-pointer {
     display: flex;
     margin-top: 10vh;
 }
 
 
-.Portfolio {
+.portfolio {
+    margin: 0;
+    padding: 0;
     background-color: #595F39;
-    height: 100dvh;
+    height: 100vh;
+    display: grid;
+    grid-auto-flow: row;
+    font-size: 2vh;
+    color:#E4E4DE;
+    padding-top: 5vh;
 }
 
+.project {
+    display: flex;
+    padding: 4vh;
+    margin-top: 2vh
+}
 
+.project-image {
+    width: 30vw;
+    border-radius: 5%;
+}
+
+.project-spec {
+    margin-left: 5vw;
+    display: grid;
+    grid-row: 3;
+}
+
+.project-languages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 
 
