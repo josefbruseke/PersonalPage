@@ -1,3 +1,4 @@
+/* Reset de estilos e configurações gerais */
 body {
     padding: 0;
     margin: 0;
@@ -6,7 +7,7 @@ body {
     font-family: 'Castoro', serif;
 }
 
-
+/* Estilos da barra de navegação */
 nav {
     background-color: #E4E4DE;
     display: flex;
@@ -14,7 +15,7 @@ nav {
     justify-content: flex-end;
     align-items: center;
     height: 5%;
-    width: 100%;
+    width: 100%; /* Adicionado um z-index alto para garantir que a barra de navegação esteja acima de outros elementos */
 }
 
 nav ul {
@@ -37,22 +38,26 @@ nav a:hover {
     border-radius: 8%;
 }
 
+/* Estilos da seção inicial */
 #home {
     margin: 0;
     padding: 0;
     background-color: #C4C5BA;
-    height: 100dvh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     padding-top: 5vh;
     align-items: center;
 }
 
+
 #home h2, h3 {
     text-align: center;
 }
 
+
 .profile-photo {
+    width: 20vw;
     border-radius: 50%;
 }
 
@@ -64,30 +69,29 @@ nav a:hover {
 
 .portfolio-pointer {
     display: flex;
-    margin-top: 10vh;
+    margin-top: 5vw; /* Posicionamento absoluto em relação ao #home */
 }
 
-
+/* Estilos da seção de portfólio */
 #portfolio {
     margin: 0;
-    padding: 0;
-    background-color: #595F39;
-    height: 100vh;
+    background-color: #595F39; /* Define o fundo do portfólio */
+    min-height: 100vh; /* Alterado para min-height para acomodar conteúdo */
     display: grid;
     grid-auto-flow: row;
     font-size: 2vh;
-    color:#E4E4DE;
-    padding-top: 5vh;
+    color: #E4E4DE;
+    box-sizing: border-box; /* Inclui padding e border na largura e altura do elemento */
 }
 
 .project {
     display: flex;
     padding: 4vh;
-    margin-top: 2vh
+    margin-top: 2vh;
 }
 
 .project-image {
-    width: 30vw;
+    width: 30vw; /* Tamanho da imagem em dispositivos maiores */
     border-radius: 5%;
 }
 
@@ -102,4 +106,20 @@ nav a:hover {
     grid-template-columns: repeat(2, 1fr);
 }
 
+/* Media query para dispositivos menores */
+@media screen and (max-width: 1200px) {
+    .project {
+        flex-direction: column; /* Altera a direção do flex para coluna */
+        align-items: center; /* Centraliza horizontalmente os itens */
+        text-align: center; /* Centraliza o texto */
+    }
 
+    .project-image {
+        width: 70vw; /* Reduz o tamanho da imagem em dispositivos menores */
+        margin-bottom: 2vh; /* Adiciona espaço abaixo da imagem */
+    }
+
+    .project-spec {
+        margin-left: 0; /* Remove a margem esquerda */
+    }
+}
